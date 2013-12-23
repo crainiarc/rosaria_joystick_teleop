@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package>
+  <name>rosaria_joystick_teleop</name>
+  <version>0.0.1</version>
+  <description>The rosaria teleop package</description>
+  <maintainer email="kengkiat@nus.edu.sg">Keng Kiat Lim</maintainer>
+  <license>TODO</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>joy</build_depend>
+  <run_depend>joy</run_depend>
+  <export>
+  </export>
+</package>
