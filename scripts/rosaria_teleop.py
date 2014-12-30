@@ -13,9 +13,12 @@ def callback(data):
     pub.publish(cmd_vel)
 
 def joy_relay():
+    global speed_limiter
+
     rospy.init_node('joy_relay', anonymous=True)
     speed_limiter = rospy.get_param('~speed_limiter', '5')
     rospy.Subscriber('joy', Joy, callback)
+
     rospy.spin()
 
 if __name__ == '__main__':
