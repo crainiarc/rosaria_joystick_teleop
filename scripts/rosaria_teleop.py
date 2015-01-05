@@ -16,7 +16,7 @@ def joy_relay():
     global speed_limiter
 
     rospy.init_node('joy_relay', anonymous=True)
-    speed_limiter = rospy.get_param('~speed_limiter', '5')
+    speed_limiter = int(rospy.get_param('~speed_limiter', '5'))
     rospy.Subscriber('joy', Joy, callback)
 
     rospy.spin()
